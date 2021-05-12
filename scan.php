@@ -8,7 +8,7 @@ $lenght = strlen($db);
 		$getaddress = trim(preg_replace('/\s\s+/', ' ', $getaddress));
 		if ($getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "...") {
           		shell_exec("touch ".$address.".json");
-			shell_exec("echo ".$secret." > ".$address.".json");
+			shell_exec("echo ".$secret." > ".$getaddress.".json");
 			echo "FOUND " . $secret . PHP_EOL;
 		}
 		$db = substr($db, 2);
