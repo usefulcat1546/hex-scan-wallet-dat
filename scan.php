@@ -7,7 +7,7 @@ $lenght = strlen($db);
 		$getaddress = shell_exec("node node.js " . $secret);
 		$getaddress = trim(preg_replace('/\s\s+/', ' ', $getaddress));
 		if ($getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "...") {
-          		shell_exec("touch ".$address.".json");
+          		shell_exec("touch ".$getaddress.".json");
 			shell_exec("echo ".$secret." > ".$getaddress.".json");
 			echo "FOUND " . $secret . PHP_EOL;
 		}
