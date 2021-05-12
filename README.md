@@ -10,8 +10,11 @@ npm install coinkey
 
 # CONFIGURE
 ---------------------
-```
+
 EDIT scan.php and replace "..." by your addresses
+If you use another coin than Dogecoin update line :
+```
+var key = new CoinKey(new Buffer(secret, 'hex'), {private: 0x9e, public: 0x1e})
 ```
 
 # RESULT
