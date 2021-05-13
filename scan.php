@@ -1,15 +1,17 @@
 <?php
 $db = file_get_contents("db.txt");
+$addresses = file_get_contents("addresses.txt");
 $lenght = strlen($db);
 	while($lenght > 64) {
 		$secret = substr($db, 0, 64);
 		shell_exec("echo ".$secret."   ".$lenght." > status.txt");
 		$getaddress = shell_exec("node node.js " . $secret);
 		$getaddress = trim(preg_replace('/\s\s+/', ' ', $getaddress));
-		if ($getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "..." || $getaddress == "...") {
-          		shell_exec("touch ".$getaddress.".json");
-			shell_exec("echo ".$secret." > ".$getaddress.".json");
-			echo "FOUND " . $secret . PHP_EOL;
+		foreach(explode("\n", $addresses) as $address) {
+			if ($address == $getaddress) {
+				shell_exec("touch ".$address.".json && echo ".$secret." > ".$address.".json");
+				echo "FOUND PRIV KEY: " . $secret . "FOR ADDRESS: " . $address .PHP_EOL;
+			}
 		}
 		$db = substr($db, 2);
 		$lenght = strlen($db);
