@@ -1,0 +1,22 @@
+{
+  "name": "hex-scan-wallet-dat",
+  "version": "1.0.0",
+  "description": "This script allows you to scan hexadecimal code for a wallet.dat and to extract a match if an address is found.",
+  "main": "scan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefulcat1546/hex-scan-wallet-dat.git"
+  },
+   "dependencies": {
+    "express": "3.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usefulcat1546/hex-scan-wallet-dat/issues"
+  },
+  "homepage": "https://github.com/usefulcat1546/hex-scan-wallet-dat#readme"
+}
