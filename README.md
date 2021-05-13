@@ -8,8 +8,9 @@ This scrpt is only intended for "unrecoverable" wallets.
 # REQUIREMENTS
 ---------------------
 ```
+git clone https://github.com/usefulcat1546/hex-scan-wallet-dat
 sudo apt install php nodejs npm -y
-npm install coinkey
+npm install
 ```
 
 # CONFIGURE
