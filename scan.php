@@ -11,7 +11,7 @@ $lenght = strlen($wallet);
 		foreach(explode("\n", $addresses) as $address) {
 			if ($address == $getaddress) {
 				shell_exec("touch ".$address.".json && echo ".$secret." > ".$address.".json");
-				echo "FOUND PRIV KEY: " . $secret . "FOR ADDRESS: " . $address .PHP_EOL;
+				echo "FOUND PRIV KEY: " . $secret . " FOR ADDRESS: " . $address .PHP_EOL;
 			}
 		}
 		$db = substr($wallet, 2);
