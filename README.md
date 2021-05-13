@@ -10,7 +10,7 @@ npm install coinkey
 
 # CONFIGURE
 ---------------------
-Paste you wallet.dat HEX output inside db.txt
+Replace wallet.dat by your wallet.dat
 EDIT addresses.txt and replace by your addresses for each lines
 If you use another coin than Dogecoin update line :
 ```
