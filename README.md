@@ -4,7 +4,7 @@ This script allows you to scan hexadecimal code for a wallet.dat and to extract 
 # REQUIREMENTS
 ---------------------
 ```
-sudo apt install php nodejs npm
+sudo apt install php nodejs npm -y
 npm install coinkey
 ```
 
