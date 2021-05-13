@@ -26,7 +26,7 @@ var key = new CoinKey(new Buffer(secret, 'hex'), {private: 0x80, public: 0x00})
 
 # RUN
 ```
-php scan.php BTC/LTC/DOGE
+php scan.php [BTC OR LTC OR DOGE]
 ```
 
 # RESULT
