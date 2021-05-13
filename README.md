@@ -18,7 +18,7 @@ Replace wallet.dat by your wallet.dat
 
 EDIT addresses.txt and replace by your addresses for each lines.
 
-If you use another coin than Dogecoin update line :
+If you use another coin than Dogecoin update line in scan.js :
 ```
 var key = new CoinKey(new Buffer(secret, 'hex'), {private: 0x9e, public: 0x1e})
 ```
