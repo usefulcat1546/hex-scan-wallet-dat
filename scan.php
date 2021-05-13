@@ -14,7 +14,7 @@ $lenght = strlen($wallet);
 				echo "FOUND PRIV KEY: " . $secret . "FOR ADDRESS: " . $address .PHP_EOL;
 			}
 		}
-		$db = substr($db, 2);
-		$lenght = strlen($db);
+		$db = substr($wallet, 2);
+		$lenght = strlen($wallet);
 	}
 ?>
