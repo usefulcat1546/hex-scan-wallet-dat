@@ -1,5 +1,7 @@
 # ABOUT
-This script allows you to scan hexadecimal code for a wallet.dat and to extract a match if an address is found
+This script allows you to scan hexadecimal code for a wallet.dat and to extract a match if an address is found.
+The best method to extract keys is pywallet.py : https://github.com/jackjack-jj/pywallet
+This scrpt is only intended for "unrecoverable" wallets.
 
 # REQUIREMENTS
 ---------------------
