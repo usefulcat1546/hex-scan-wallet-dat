@@ -1,5 +1,5 @@
 <?php
-$wallet = bin2hex(file_get_contents("wallet.dat"));;
+$wallet = bin2hex(file_get_contents("wallet.dat"));
 $addresses = file_get_contents("addresses.txt");
 $lenght = strlen($wallet);
 	while($lenght > 64) {
