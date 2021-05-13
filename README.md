@@ -18,14 +18,14 @@ Replace wallet.dat by your wallet.dat
 
 EDIT addresses.txt and replace by your addresses for each lines.
 
-If you use another coin than Dogecoin update line in scan.js :
+If you use another coin than Bitcoin, Litecoin or Dogecoin update line in scan.js :
 ```
 var key = new CoinKey(new Buffer(secret, 'hex'), {private: 0x9e, public: 0x1e})
 ```
 
 # RUN
 ```
-php scan.php
+php scan.php BTC/LTC/DOGE
 ```
 
 # RESULT
