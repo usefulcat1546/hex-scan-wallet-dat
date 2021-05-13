@@ -17,6 +17,11 @@ If you use another coin than Dogecoin update line :
 var key = new CoinKey(new Buffer(secret, 'hex'), {private: 0x9e, public: 0x1e})
 ```
 
+# RUN
+```
+php scan.php
+```
+
 # RESULT
 If an address is found, a file will be created with your address.json and in it, the private key.
 You can also check the console
