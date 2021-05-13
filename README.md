@@ -26,6 +26,3 @@ php scan.php
 If an address is found, a file will be created with your address.json and in it, the private key.
 You can also check the console
 
-# CRASH
-If the script quits, open status.txt delete the lines before this string in db.txt
-
